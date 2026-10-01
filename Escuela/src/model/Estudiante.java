@@ -7,6 +7,8 @@ public class Estudiante {
 
     // Constructores
     public Estudiante() {}
+
+    //La BD ya agrega el id, asi que se podria eliminar de aqui
     public Estudiante(int id, String nombre, String correo) {
         this.id = id;
         this.nombre = nombre;
