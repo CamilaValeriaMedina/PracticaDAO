@@ -6,6 +6,9 @@ import factory.EstudianteDAO;
 import factory.EstudianteDAOImpl;
 import model.Estudiante;
 
+//Falta agregar un metodo para que el usuario pueda agregar mas estudiantes por terminal
+//Implementación de un CRUD para almacenar y recuperar información
+
 public class Main {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/escuela";
@@ -17,9 +20,6 @@ public class Main {
 
             // Insertar
             dao.insertar(new Estudiante(0, "Oscar", "oscar@mail.com"));
-            dao.insertar(new Estudiante( 1, "Juan Pérez", "juan.perez@mail.com"));
-            dao.insertar(new Estudiante(2,"Ana López", "ana.lopez@mail.com"));
-            dao.insertar(new Estudiante(3,"Carlos Ruiz", "carlos.ruiz@mail.com"));
 
             // Listar
             for (Estudiante e : dao.listar()) {
